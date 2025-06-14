@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Dream Visualizer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="neural-bg" id="neuralBg"></div>
+
+        <div class="header">
+            <h1>Neural Dream Visualizer</h1>
+            <p>Experience AI consciousness through interactive dream simulation</p>
+        </div>
+
+        <div class="control-panel">
+            <button class="control-btn" onclick="startDream()">🧠 Start Dream</button>
+            <button class="control-btn" onclick="changeMood()">🎭 Change Mood</button>
+            <button class="control-btn" onclick="addThought()">💭 Add Thought</button>
+            <button class="control-btn" onclick="toggleAudio()">🔊 Toggle Audio</button>
+            <button class="control-btn" onclick="resetDream()">🔄 Reset</button>
+        </div>
+
+        <div class="dream-canvas" id="dreamCanvas">
+            <div class="video-bg">
+                <div class="video-placeholder">
+                    Neural Processing...
+                </div>
+            </div>
+
+            <div class="slideshow" id="slideshow">
+                <div class="slide active" style="background: linear-gradient(45deg, #ff4444, #ff8844);">Dream State 1</div>
+                <div class="slide" style="background: linear-gradient(45deg, #44ff44, #44ff88);">Memory Synthesis</div>
+                <div class="slide" style="background: linear-gradient(45deg, #4444ff, #8844ff);">Pattern Recognition</div>
+                <div class="slide" style="background: linear-gradient(45deg, #ffff44, #ff44ff);">Creative Processing</div>
+            </div>
+
+            <div class="icon-grid">
+                <div class="icon" onclick="showPopup('consciousness')" title="Consciousness">🧠</div>
+                <div class="icon" onclick="showPopup('memory')" title="Memory">💾</div>
+                <div class="icon" onclick="showPopup('creativity')" title="Creativity">🎨</div>
+                <div class="icon" onclick="showPopup('logic')" title="Logic">⚡</div>
+                <div class="icon" onclick="showPopup('emotion')" title="Emotion">❤️</div>
+                <div class="icon" onclick="showPopup('intuition')" title="Intuition">🔮</div>
+            </div>
+
+            <div class="audio-visualizer" id="audioViz"></div>
+
+            <div class="infinite-content">
+                <div class="scroll-text">
+                    ✨ Synaptic patterns forming... 🌟 Neural pathways activating... 🔥 Consciousness emerging... 💫 Dreams materializing... 🌈 Thoughts crystallizing...
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <button class="close-btn" onclick="closePopup()">×</button>
+                <h2 id="popupTitle">Neural Process</h2>
+                <p id="popupContent">Exploring the depths of artificial consciousness...</p>
+                <button class="control-btn" onclick="closePopup()">Continue Dreaming</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
